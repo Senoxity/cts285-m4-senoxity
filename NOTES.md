@@ -19,15 +19,15 @@ Search command: `grep -rn "SEARCH WORD" --include=*.py .`
 
 ## Part 2. What the program remembered [S1]
 
-After the restart, what did the program remember? TODO
+After the restart, what did the program remember? The program remembered the last step that I was on.
 
-Which file made that possible? TODO
+Which file made that possible? dataman_store.json
 
 ## Part 3. The interface change [S1]
 
-What did you change in `app.py`? TODO
+What did you change in `app.py`? I changed "Not Yet. Try Again." to read "EEE -- Try Again"
 
-Why did no test need to change? TODO
+Why did no test need to change? The test is not looking for UI behavior.
 
 ## Part 4. The rule in the real library [S2]
 
