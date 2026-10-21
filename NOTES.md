@@ -10,10 +10,10 @@ Write your prediction before you open any code. Then search. In the last column,
 
 | Action | Search word | My prediction (file) | Files found and what each does |
 |---|---|---|---|
-| Prints "Not yet. Try again." | `Not yet` | TODO | TODO |
-| Decides that the second miss shows the answer | `reveal` | TODO | TODO |
-| Saves one attempt | `save_attempt` | TODO | TODO |
-| Refuses the 11th problem | `SetFull` | TODO | TODO |
+| Prints "Not yet. Try again." | `Not yet` | app.py | app.py prints the line out upon an incorrect answer |
+| Decides that the second miss shows the answer | `reveal` | check.py | logic.py reveals answer when tries is greater than or equal to the max attempts |
+| Saves one attempt | `save_attempt` | store.py | store.py saves one attempt using specific parameters (i.e. session id, attempts, etc.) |
+| Refuses the 11th problem | `SetFull` | test_bank.py | bank.py refuses the 11th problem, since it is not in the self.members list |
 
 Search command: `grep -rn "SEARCH WORD" --include=*.py .`
 
