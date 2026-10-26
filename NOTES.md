@@ -31,23 +31,23 @@ Why did no test need to change? The test is not looking for UI behavior.
 
 ## Part 4. The rule in the real library [S2]
 
-The same 10-problem rule exists in the real library. Write the file and the function name. TODO
+The same 10-problem rule exists in the real library. Write the file and the function name. logic.py, class SetFull
 
 ## Part 5. The red test [S2]
 
-With the rule removed from the library, what did the screen show? TODO
+With the rule removed from the library, what did the screen show? Showed the line: Failed: DID NOT RAISE <class 'dataman.logic.SetFull'>
 
-With the rule removed, which test failed? TODO
+With the rule removed, which test failed? test_eleventh_problem_is_refused
 
 ## Part 6. The data swap [S2]
 
-A real database would replace which file? TODO
+A real database would replace which file? dataman_store.json
 
-Which file holds the rules and does not change when the database changes? TODO
+Which file holds the rules and does not change when the database changes? logic.py
 
 ## Reflection [S2]
 
-Write 3 to 5 sentences. Pick one layer. Say what you changed in it. Say what stayed the same in the other two layers. TODO
+In the logic layer of the program, I made it so the program properly checked when the Memory Bank problems were above 11, and that it would properly raise SetFull when it needed to. This change only effected the logic layer, so the data and interface layers were unaffected. I also made sure that it passed the associated pytest.
 
 ## Beta feedback (optional)
 
